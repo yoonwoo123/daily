@@ -14,6 +14,8 @@
        있는 ssafy 함수라고 가정한다.)
 
      ```python
+     from yoonwoo import views
+     
      urlpatterns = [
          path('admin/', admin.site.urls),
          path('ssafy/', views.ssafy),
