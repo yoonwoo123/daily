@@ -1,0 +1,10 @@
+{% if age == 'unknown' %}
+    <h1>등록되지 않은 학생입니다.</h1>
+{% else %}
+<h1>이름 : {{ name }} </h1>
+<h3>나이 : {{ age }} </h3>
+{% endif %}
+<hr>
+<p>{{ teach.name }}</p>
+<p>{{ teach.age }}</p>
+<p>{{ teach.nickname }}</p>
