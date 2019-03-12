@@ -20,7 +20,7 @@
   위해 form태그 안에 action속성값으로 넣어줘야 하는 경로를 작성하세요
 
   ```html
-  <form action="{% url 'question:comments_create question.pk comment.pk %}" method="POST">
+  <form action="{% url 'question:comments_create question.pk %}" method="POST">
       {% csrf_token %}
       <input type="text" name="content">
       <input type="submit">
