@@ -17,7 +17,7 @@ def detail(request, question_pk):
 ```html
 <!--html-->
 <h1>{{ question.title }}</h1>
-{% for choice in question.choice_set.all %}
+{% for choice in question.choice_set.all %} <!-- template에서는 all뒤에 괄호x -->
 <li> {{ choice.content }} : {{ choice.votes }}표</li>
 {% endfor %}
 ```
